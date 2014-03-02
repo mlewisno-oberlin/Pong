@@ -516,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e882adf3d96da4b478ff875e9317ba30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ourFont: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
 --- !u!114 &1711698852
 MonoBehaviour:
   m_ObjectHideFlags: 0

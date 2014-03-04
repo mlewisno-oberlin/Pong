@@ -15,9 +15,7 @@ public class GameSetup : MonoBehaviour {
 	public Color tier2Color = new Color(0.5f, 0.5f, 0.5f);
 
 	public float edgeDistancePlayer = 70f;  //75 Pixels
-	
-	
-	
+
 	public Transform TeamOnePlayerOne;
 	public Transform TeamOnePlayerTwo;
 	public Transform TeamTwoPlayerOne;

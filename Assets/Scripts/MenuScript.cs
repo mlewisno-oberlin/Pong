@@ -48,7 +48,7 @@ public class MenuScript : MonoBehaviour
 			)
 		{
 			// On Click, roll the credits
-			Application.LoadLevel("Options");
+			Application.LoadLevel("OptionsMenu");
 		}
 		
 		// Draw a button to play the credits

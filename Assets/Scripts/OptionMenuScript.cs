@@ -8,30 +8,11 @@ public class OptionMenuScript : MonoBehaviour
 	
 	void OnGUI()
 	{
-		const int buttonWidth = 300;
-		const int buttonHeight = 40;
+		const int buttonWidth = 500;
+		const int buttonHeight = 100;
 		
 		GUI.backgroundColor = Color.black;
 		GUI.skin.font = ourFont;
-		
-		// Draw a button to start the game
-		if (
-			GUI.Button(
-			// Center in X, 2/3 of the height in Y
-			new Rect(
-			Screen.width / 2 - (buttonWidth / 2),
-			(2 * Screen.height / 4) - (buttonHeight / 2),
-			buttonWidth,
-			buttonHeight
-			),
-			"Play Pong!"
-			)
-			)
-		{
-			// On Click, load the first level.
-			// "Stage1" is the name of the first scene we created.
-			Application.LoadLevel("Stage1");
-		}
 		
 		// Draw a button to open the options menu
 		if (
@@ -39,7 +20,7 @@ public class OptionMenuScript : MonoBehaviour
 			// Center in X, 2/3 of the height in Y
 			new Rect(
 			Screen.width / 2 - (buttonWidth / 2),
-			(2 * Screen.height / 4) + (buttonHeight * 1.15f) - (buttonHeight / 2),
+			(2 * Screen.height / 4) - (buttonHeight * 1.15f) - (buttonHeight / 2),
 			buttonWidth,
 			buttonHeight
 			),
@@ -57,7 +38,7 @@ public class OptionMenuScript : MonoBehaviour
 			// Center in X, 2/3 of the height in Y
 			new Rect(
 			Screen.width / 2 - (buttonWidth / 2),
-			(2 * Screen.height / 4) + (buttonHeight * 1.15f) + (buttonHeight / 2 + buttonHeight*0.15f),
+			(2 * Screen.height / 4) - (buttonHeight * 1.15f) + (buttonHeight / 2 + buttonHeight*0.15f),
 			buttonWidth,
 			buttonHeight
 			),
@@ -66,7 +47,7 @@ public class OptionMenuScript : MonoBehaviour
 			)
 		{
 			// On Click, roll the credits
-			Application.LoadLevel("Sound");
+			Application.LoadLevel("SoundMenu");
 		}
 		
 		// Draw a button to close the game
@@ -75,7 +56,7 @@ public class OptionMenuScript : MonoBehaviour
 			// Center in X, 2/3 of the height in Y
 			new Rect(
 			Screen.width / 2 - (buttonWidth / 2),
-			(2 * Screen.height / 4) + (buttonHeight * 1.15f) + (buttonHeight * 1.65f),
+			(2 * Screen.height / 4) - (buttonHeight * 1.15f) + (buttonHeight * 1.65f),
 			buttonWidth,
 			buttonHeight
 			),

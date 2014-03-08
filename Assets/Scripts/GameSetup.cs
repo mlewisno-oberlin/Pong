@@ -49,6 +49,10 @@ public class GameSetup : MonoBehaviour {
 		SwitchPlanes.lockPlayer(TeamTwoPlayerTwo);
 		TeamOnePlayerTwo.renderer.material.color = tier2Color;
 		TeamTwoPlayerTwo.renderer.material.color = tier2Color;
+		if (!SettingsVariables.four_players) {
+			Destroy(TeamOnePlayerTwo.gameObject);
+			Destroy(TeamTwoPlayerTwo.gameObject);
+				}
 
 		
 		

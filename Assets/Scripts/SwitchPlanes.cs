@@ -21,12 +21,14 @@ public class SwitchPlanes : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (time_till_switch <= 0) {
-						Switch (state);
-						time_till_switch = default_time;
-				} else {
+		if (SettingsVariables.four_players) {
+						if (time_till_switch <= 0) {
+								Switch (state);
+								time_till_switch = default_time;
+						} else {
 
-						time_till_switch -= Time.deltaTime;
+								time_till_switch -= Time.deltaTime;
+						}
 				}
 	}
 

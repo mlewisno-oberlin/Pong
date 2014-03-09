@@ -17,4 +17,25 @@ public class SettingsVariables : MonoBehaviour {
 	public static bool split_time = false;
 	public static bool ball_split = false;
 
+	// Keeps track of each player's control scheme and set sensetivity
+	// Team One Player One
+	public static float teamOnePlayerOneSpeed = 30;
+	public static KeyCode teamOnePlayerOneUp = KeyCode.W;
+	public static KeyCode teamOnePlayerOneDown = KeyCode.S;
+
+	// Team One Player Two
+	public static float teamOnePlayerTwoSpeed = 20;
+	public static KeyCode teamOnePlayerTwoUp = KeyCode.W;
+	public static KeyCode teamOnePlayerTwoDown = KeyCode.S;
+
+	// Team Two Player One
+	public static float teamTwoPlayerOneSpeed = 20;
+	public static KeyCode teamTwoPlayerOneUp = KeyCode.W;
+	public static KeyCode teamTwoPlayerOneDown = KeyCode.S;
+
+	// Team Two Player Two
+	public static float teamTwoPlayerTwoSpeed = 20;
+	public static KeyCode teamTwoPlayerTwoUp = KeyCode.W;
+	public static KeyCode teamTwoPlayerTwoDown = KeyCode.S;
+
 }

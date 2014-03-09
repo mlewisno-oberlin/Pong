@@ -31,6 +31,19 @@ public class PlayerControls : MonoBehaviour {
 				}
 	}
 
+	// These three methods update the players keys and speed
+	public void setUp(KeyCode newUp){
+		moveUp = newUp;
+		}
+
+	public void setDown(KeyCode newDown){
+		moveDown = newDown;
+	}
+
+	public void setSpeed(float newSpeed){
+				speed = newSpeed;
+		}
+
 	// Transforms the player to the opposite wall when the wall is a trigger
 	void TeleportPlayer(){
 		if (this.transform.position.y > 0) {

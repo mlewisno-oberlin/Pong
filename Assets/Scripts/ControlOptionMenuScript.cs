@@ -9,12 +9,15 @@ public class ControlOptionMenuScript : MonoBehaviour
 	const int buttonHeight = 100;
 
 	void OnGUI () {
+		// This checkbox enables 4 players
 		SettingsVariables.four_players = GUI.Toggle 
 					(new Rect (Screen.width / 2 - (buttonWidth / 2),
         			(2 * Screen.height / 4) - (buttonHeight * 1.15f) - (buttonHeight / 2),
        				buttonWidth,
         			buttonHeight), 
 				SettingsVariables.four_players, "Enable 4 Players");
+
+		// This sliding bar changes the player speed 
 
 		// Draw a button to go back to the options menu
 		if (

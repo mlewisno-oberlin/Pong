@@ -78,8 +78,6 @@ public class PowerUpSpawn : MonoBehaviour
 				if (SettingsVariables.bounciness) {
 						addToArray (bouncePowerUp);
 				}
-
-		Debug.Log (powerups.Length);
 		}
 
 		void addToArray (Transform thingy)

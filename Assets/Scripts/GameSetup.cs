@@ -14,16 +14,25 @@ public class GameSetup : MonoBehaviour {
 	public Color tier1Color = new Color(1, 1, 1);
 	public Color tier2Color = new Color(0.5f, 0.5f, 0.5f);
 
-	public float edgeDistancePlayer = 70f;  //75 Pixels
+	public float edgeDistancePlayer = 70f;  //70 Pixels
 
 	public Transform TeamOnePlayerOne;
 	public Transform TeamOnePlayerTwo;
 	public Transform TeamTwoPlayerOne;
 	public Transform TeamTwoPlayerTwo;
+
+	public PlayerControls T1P1;
+	public PlayerControls T1P2;
+	public PlayerControls T2P1;
+	public PlayerControls T2P2;
 	
-	
-	
+
 	void Start () {
+		// Set up the player's speeds and controls
+		T1P1.setUp (SettingsVariables.teamOnePlayerOneUp);
+		T1P1.setDown (SettingsVariables.teamOnePlayerOneDown);
+		T1P1.setSpeed (SettingsVariables.teamOnePlayerOneSpeed);
+
 		// Set up the boundary walls
 		topWall.size = new Vector2 (mainCamera.ScreenToWorldPoint (new Vector3 (Screen.width * 2f, 0, 0)).x ,1f);
 		topWall.center = new Vector2 (0f, mainCamera.ScreenToWorldPoint (new Vector3 (0, Screen.height, 0)).y + 0.5f);

@@ -438,6 +438,10 @@ MonoBehaviour:
   TeamOnePlayerTwo: {fileID: 1791846826}
   TeamTwoPlayerOne: {fileID: 33886503}
   TeamTwoPlayerTwo: {fileID: 176502070}
+  T1P1: {fileID: 1037156681}
+  T1P2: {fileID: 1791846828}
+  T2P1: {fileID: 33886505}
+  T2P2: {fileID: 176502072}
 --- !u!114 &350327625
 MonoBehaviour:
   m_ObjectHideFlags: 0

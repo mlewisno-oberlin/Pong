@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e712a0b3003f4e74b2bb1f7d60e05a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ourFont: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
+  ourFont: {fileID: 12800000, guid: 45b0ee7113bc84e2380a9e363ba12be7, type: 3}
   skin: {fileID: 11400000, guid: 8bc05d5009d2c4c1b89f4cdd79b7d208, type: 2}
 --- !u!1001 &364562716
 Prefab:

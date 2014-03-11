@@ -13,6 +13,9 @@ public class ControlOptionMenuScript : MonoBehaviour
 	// Keeps track of slider position
 	private float hSliderValue = 20.0f;
 
+	// Keep track of keys
+	string inputString = "w";
+
 	void OnGUI () {
 		// Sets up the two highest level areas
 		// Area One
@@ -35,7 +38,8 @@ public class ControlOptionMenuScript : MonoBehaviour
 						SettingsVariables.teamOnePlayerOneSpeed = GUILayout.HorizontalSlider (SettingsVariables.teamOnePlayerOneSpeed, 20.0f, 30.0f);
 						// Label and entry box for the Up Key
 						GUILayout.Label ("Up Key");
-						
+						inputString = GUILayout.TextField(...);
+						SettingsVariables.teamOnePlayerOneUp = (KeyCode)System.Enum.Parse(typeof(KeyCode), inputString);
 						// Label and entry box for the Down Key
 						GUILayout.Label ("Down Key");
 					GUILayout.EndVertical ();

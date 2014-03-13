@@ -716,6 +716,10 @@ Prefab:
       propertyPath: bottomWall
       value: 
       objectReference: {fileID: 407385350}
+    - target: {fileID: 11400000, guid: a1ae20bb69557403eb7543260c941687, type: 2}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 764776718}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1ae20bb69557403eb7543260c941687, type: 2}
   m_RootGameObject: {fileID: 1293082033}
@@ -733,6 +737,7 @@ GameObject:
   - 92: {fileID: 764776717}
   - 124: {fileID: 764776716}
   - 81: {fileID: 764776715}
+  - 114: {fileID: 764776720}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -801,6 +806,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &764776720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764776714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37134ea6301024f3cb9cb41ec6c243b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ourFont: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
+  header_font: {fileID: 12800000, guid: 015d29346c4734c65a79b4886a44058e, type: 3}
+  white_color: {fileID: 2800000, guid: 6524fe7145f444a9cbae609225bd9a67, type: 3}
+  my_skin: {fileID: 0}
+  the_ball: {fileID: 1293082036}
 --- !u!1001 &1004149539
 Prefab:
   m_ObjectHideFlags: 0
@@ -1128,9 +1149,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8798f594d42a40509ac590f05cfc245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stored_velocity: {x: 0, y: 0, z: 0}
   topWall: {fileID: 1658274893}
   bottomWall: {fileID: 407385350}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 764776718}
   duration: 20
 --- !u!1 &1432406749
 GameObject:

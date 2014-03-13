@@ -3,6 +3,9 @@ using System.Collections;
 
 public class BallControl : MonoBehaviour {
 
+	// Variable for the ball velocity
+	public Vector3 stored_velocity;
+
 	// The wall variables for the no walls powerup
 	public BoxCollider2D topWall;
 	public BoxCollider2D bottomWall;
@@ -23,6 +26,15 @@ public class BallControl : MonoBehaviour {
 	Collision2D last_player;
 	bool been_set = false;
 
+	public void pauseBall(){
+		stored_velocity = rigidbody2D.velocity;
+		rigidbody2D.velocity = new Vector3(0, 0, 0);
+	}
+
+	public void unPause(){
+		rigidbody2D.velocity = stored_velocity;
+	}
+
 	//Use this for initialization
 	IEnumerator Start () {
 		yield return new WaitForSeconds(2);
@@ -31,7 +43,7 @@ public class BallControl : MonoBehaviour {
 
 	// When the object impacts 
 	void OnCollisionEnter2D (Collision2D colInfo) {
-			// Fricton element, added only sometimes
+		// Fricton element, added only sometimes
 		 if (colInfo.collider.tag == "Player") {
 			last_player = colInfo;
 			been_set = true;

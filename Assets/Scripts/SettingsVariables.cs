@@ -8,6 +8,10 @@ public class SettingsVariables : MonoBehaviour {
 	// Keeps track of the number of players the player(s) have asked for
 	public static bool four_players = false;
 
+	// Keeps track of various glocal settings
+	public static bool music = true;
+	public static bool sound_effects = true;
+
 	// Keeps track of which powerups are allowed
 	public static bool gravity = true;
 	public static bool reverse_gravity = true;
@@ -17,9 +21,12 @@ public class SettingsVariables : MonoBehaviour {
 	public static bool split_time = false;
 	public static bool ball_split = false;
 
+	// Keeps track of whether or not the game is active
+	public static bool menu_active = false;
+
 	// Keeps track of each player's control scheme and set sensetivity
 	// Team One Player One
-	public static float teamOnePlayerOneSpeed = 30;
+	public static float teamOnePlayerOneSpeed = 20;
 	public static KeyCode teamOnePlayerOneUp = KeyCode.W;
 	public static KeyCode teamOnePlayerOneDown = KeyCode.S;
 

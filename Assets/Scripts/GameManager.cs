@@ -7,8 +7,6 @@ public class GameManager : MonoBehaviour {
 	static int Team02Score = 0;
 	public GUISkin scoreDisplay;
 
-	// Variables for the gravity powerup
-
 	// Updates Score
 	public static void Score (string WallName) {
 		if (WallName.Equals("leftWall")){

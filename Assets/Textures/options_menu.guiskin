@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12001, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ControlsMenu
+  m_Name: options_menu
   m_EditorClassIdentifier: 
-  m_Font: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
+  m_Font: {fileID: 12800000, guid: 45b0ee7113bc84e2380a9e363ba12be7, type: 3}
   m_box:
     m_Name: box
     m_Normal:
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_button:
     m_Name: button
     m_Normal:
-      m_Background: {fileID: 11006, guid: 0000000000000000e000000000000000, type: 0}
+      m_Background: {fileID: 2800000, guid: 6524fe7145f444a9cbae609225bd9a67, type: 3}
       m_TextColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
     m_Hover:
       m_Background: {fileID: 11003, guid: 0000000000000000e000000000000000, type: 0}
@@ -117,8 +117,8 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
-    m_FontSize: 5
+    m_Font: {fileID: 0}
+    m_FontSize: 40
     m_FontStyle: 0
     m_Alignment: 4
     m_WordWrap: 0
@@ -133,10 +133,10 @@ MonoBehaviour:
   m_toggle:
     m_Name: toggle
     m_Normal:
-      m_Background: {fileID: 11018, guid: 0000000000000000e000000000000000, type: 0}
+      m_Background: {fileID: 2800000, guid: 6524fe7145f444a9cbae609225bd9a67, type: 3}
       m_TextColor: {r: .891128957, g: .891128957, b: .891128957, a: 1}
     m_Hover:
-      m_Background: {fileID: 11014, guid: 0000000000000000e000000000000000, type: 0}
+      m_Background: {fileID: 2800000, guid: 6524fe7145f444a9cbae609225bd9a67, type: 3}
       m_TextColor: {r: 1, g: 1, b: 1, a: 1}
     m_Active:
       m_Background: {fileID: 11013, guid: 0000000000000000e000000000000000, type: 0}
@@ -235,8 +235,8 @@ MonoBehaviour:
       m_Right: 0
       m_Top: 0
       m_Bottom: 0
-    m_Font: {fileID: 12800000, guid: 2e1e0ef0bc82d4d4aab12974418bdf9e, type: 3}
-    m_FontSize: 5
+    m_Font: {fileID: 0}
+    m_FontSize: 0
     m_FontStyle: 0
     m_Alignment: 0
     m_WordWrap: 1
@@ -429,7 +429,7 @@ MonoBehaviour:
     m_Name: horizontalslider
     m_Normal:
       m_Background: {fileID: 11009, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -441,7 +441,7 @@ MonoBehaviour:
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnNormal:
       m_Background: {fileID: 0}
-      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_OnHover:
       m_Background: {fileID: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}
@@ -488,7 +488,7 @@ MonoBehaviour:
     m_Name: horizontalsliderthumb
     m_Normal:
       m_Background: {fileID: 11011, guid: 0000000000000000e000000000000000, type: 0}
-      m_TextColor: {r: 1, g: 1, b: 1, a: 1}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
     m_Hover:
       m_Background: {fileID: 11012, guid: 0000000000000000e000000000000000, type: 0}
       m_TextColor: {r: 0, g: 0, b: 0, a: 1}

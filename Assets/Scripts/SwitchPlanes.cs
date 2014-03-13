@@ -21,7 +21,7 @@ public class SwitchPlanes : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (SettingsVariables.four_players) {
+		if (SettingsVariables.four_players && !SettingsVariables.menu_active) {
 						if (time_till_switch <= 0) {
 								Switch (state);
 								time_till_switch = default_time;
@@ -36,7 +36,6 @@ public class SwitchPlanes : MonoBehaviour {
 		// If the state is one, switch to two and switch the appropriate objects
 				if (state_in.Equals ("one")) {
 						state = "two";
-						// Debug.Log (state);
 						// Switch which objects have enabled colliders
 						TeamOnePlayerOne.collider2D.enabled = false;
 						TeamTwoPlayerOne.collider2D.enabled = false;
@@ -56,7 +55,6 @@ public class SwitchPlanes : MonoBehaviour {
 						
 				} else if (state_in.Equals ("two")) {
 						state = "one";
-						// Debug.Log (state);
 						// Switch which objects have enabled colliders
 						TeamOnePlayerOne.collider2D.enabled = true;
 						TeamTwoPlayerOne.collider2D.enabled = true;
@@ -74,7 +72,6 @@ public class SwitchPlanes : MonoBehaviour {
 						TeamTwoPlayerTwo.renderer.material.color = tier2Color;
 				} else {
 						state = "one";
-						Debug.Log (state);
 						// Switch which objects have enabled colliders
 						TeamOnePlayerOne.collider2D.enabled = true;
 						TeamTwoPlayerOne.collider2D.enabled = true;

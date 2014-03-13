@@ -147,8 +147,11 @@ public class BallControl : MonoBehaviour {
 		transform.position = new Vector3 (0, 0, zpos);
 		yield return new WaitForSeconds(0.5f);
 		been_set = false;
-		BallStart ();
+		if(!SettingsVariables.menu_active){
+			BallStart ();
 		}
+
+	}
 
 	// Picks a direction for the ball and sets if off in that direction
 	void BallStart (){

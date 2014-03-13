@@ -822,6 +822,13 @@ MonoBehaviour:
   white_color: {fileID: 2800000, guid: 6524fe7145f444a9cbae609225bd9a67, type: 3}
   my_skin: {fileID: 0}
   the_ball: {fileID: 1293082036}
+  stored_velocity: {x: 0, y: 0, z: 0}
+  top_players: 0
+  bottom_players: 0
+  t1p1: {fileID: 1037156684}
+  t1p2: {fileID: 1791846826}
+  t2p1: {fileID: 33886503}
+  t2p2: {fileID: 176502070}
 --- !u!1001 &1004149539
 Prefab:
   m_ObjectHideFlags: 0

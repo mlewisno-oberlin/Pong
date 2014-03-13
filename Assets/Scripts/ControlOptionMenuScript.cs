@@ -71,7 +71,7 @@ public class ControlOptionMenuScript : MonoBehaviour
 				// Draw a button to go back to the main menu
 				if (GUILayout.Button("Main Menu"))
 				{
-					// On Click, close the game.
+					// On Click, load the new player speeds and then go to the main menu.
 					Application.LoadLevel ("Menu");
 				}
 			GUILayout.EndHorizontal ();

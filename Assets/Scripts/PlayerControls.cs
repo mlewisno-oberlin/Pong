@@ -12,8 +12,18 @@ public class PlayerControls : MonoBehaviour {
 	public KeyCode moveDown = KeyCode.S;
 	public bool controllable = true;
 	public float speed = 20;
-
 	
+	void Start() {
+		if(this.name == "Team 1 - Player1")
+		setSpeed(SettingsVariables.teamOnePlayerOneSpeed);
+		if(this.name == "Team 1 - Player2")
+		setSpeed(SettingsVariables.teamOnePlayerTwoSpeed);
+		if(this.name == "Team 2 - Player1")
+		setSpeed(SettingsVariables.teamTwoPlayerOneSpeed);
+		if(this.name == "Team 2 - Player2")
+		setSpeed(SettingsVariables.teamTwoPlayerTwoSpeed);
+	}
+
 	void Update () {
 		
 		if (controllable) {

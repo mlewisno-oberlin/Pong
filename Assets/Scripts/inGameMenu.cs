@@ -14,9 +14,17 @@ public class inGameMenu : MonoBehaviour {
 	public Transform the_ball;
 	public Vector3 stored_velocity;
 
+	// For pausing the players
+	public bool top_players = false;
+	public bool bottom_players = false;
+	public Transform t1p1;
+	public Transform t1p2;
+	public Transform t2p1;
+	public Transform t2p2;
+
 	public void pauseGame(){
 		stored_velocity = the_ball.rigidbody2D.velocity;
-		if(stored_velocity.Equals(new Vector3(0, 0, 0))){
+		if(stored_velocity.Equals(new Vector3(0, stored_velocity.y, 0))){
 			int randomNumber = Random.Range (0, 2);
 			int upOrDown = Random.Range (0, 2);
 			
@@ -37,10 +45,31 @@ public class inGameMenu : MonoBehaviour {
 			}
 		}
 		the_ball.rigidbody2D.velocity = new Vector3(0, 0, 0);
+		// Pause players
+		if(t1p1.GetComponent<PlayerControls>().enabled){
+			top_players = true;
+			t1p1.GetComponent<PlayerControls>().enabled = false;
+			t2p1.GetComponent<PlayerControls>().enabled = false;
+		}
+		else{
+			bottom_players = true;
+			t1p2.GetComponent<PlayerControls>().enabled = false;
+			t2p2.GetComponent<PlayerControls>().enabled = false;
+		}
 	}
 	
 	public void unPauseGame(){
 		the_ball.rigidbody2D.velocity = stored_velocity;
+		if(top_players){
+			top_players = false;
+			t1p1.GetComponent<PlayerControls>().enabled = true;
+			t2p1.GetComponent<PlayerControls>().enabled = true;
+		}
+		else{
+			bottom_players = false;
+			t1p2.GetComponent<PlayerControls>().enabled = true;
+			t2p2.GetComponent<PlayerControls>().enabled = true;
+		}
 	}
 	
 	// Update is called once per frame
@@ -78,7 +107,9 @@ public class inGameMenu : MonoBehaviour {
 				)
 				)
 			{
-				// On Click, close the game.
+				// On Click, disable the menu and go to the main menu
+				SettingsVariables.menu_active = false;
+				unPauseGame();
 				Application.LoadLevel ("Menu");
 			}
 		}
